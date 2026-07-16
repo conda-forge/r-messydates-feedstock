@@ -1,4 +1,4 @@
-{% set version = "0.5.4" %}
+{% set version = "1.0.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/messydates_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/messydates/messydates_{{ version }}.tar.gz
-  sha256: f128b4097edac3d42e98dfd7c5b5be0f389c9cc1044a50a8e9fc50a7cf4ffac4
+  sha256: 01982eb0ea932093df0e4974318deb042ec5a364ea3d209f4edec71beb4f549c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -47,8 +47,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=messydates
   license: MIT
-  summary: Contains a set of tools for constructing and coercing into and from the "mdate" class. This date class implements ISO 8601-2:2019(E) and allows regular dates to be annotated to express unspecified date components, approximate or uncertain date components, date ranges, and sets of dates. This is useful for describing
-    and analysing temporal information, whether historical or recent, where date precision may vary.
+  summary: Contains a set of tools for constructing and coercing into and from the "mdate" class. This date class implements ISO 8601-2:2019(E) and allows regular dates to be annotated to express unspecified date components, approximate or uncertain date components, date ranges, and sets of dates. This is useful for 
+    describing and analysing temporal information, whether historical or recent, where date precision may vary.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
