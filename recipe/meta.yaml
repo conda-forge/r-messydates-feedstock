@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/messydates_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/messydates/messydates_{{ version }}.tar.gz
-  sha256: 01982eb0ea932093df0e4974318deb042ec5a364ea3d209f4edec71beb4f549c
+  sha256: 439cd6e6807dd310b31737912b1616a035189c78b87d2742eac9804fc19a18d6
 
 build:
   number: 0
